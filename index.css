@@ -381,6 +381,14 @@ a {
     letter-spacing: 0.5px;
 }
 
+.grid-item:hover {
+    background: #fff;
+}
+
+.grid-item:hover .grid-desc {
+    color: #000;
+}
+
 .services-grid {
     padding: 95px 0;
 }
