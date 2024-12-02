@@ -1,0 +1,59 @@
+.pilot-nodes {
+  background: url(/assets/end-users-bg.jpg) no-repeat 50% 50%;
+  padding: 95px 0 110px;
+  background-size: cover;
+}
+
+.pilot-nodes h2 {
+  color: #fff;
+}
+
+.pilot-nodes .subtitle {
+  color: #fff;
+  margin-bottom: 55px;
+}
+
+.pilot-nodes .btn-more {
+  width: 100%;
+  text-align: center;
+  padding: 13px 0;
+}
+
+.tile-box {
+  background: rgba(40, 44, 74, 0.60);
+  backdrop-filter: blur(60px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.tile-box .tile-title {
+  color: #6696B6;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 36.4px */
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.tile-box .tile-desc {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.5px;
+}
+
+.special-info {
+  color: #6696B6;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}

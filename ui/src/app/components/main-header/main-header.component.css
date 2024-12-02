@@ -1,0 +1,59 @@
+header {
+  background: url("/assets/header-bg.jpg") no-repeat 50% 0;
+  background-repeat: no-repeat;
+  padding: 240px 0 120px;
+}
+
+h1 {
+  font-family: 'Quicksand';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 122.222% */
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin: 0 0 90px 0;
+}
+
+.intro-text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  line-height: 120%;
+  padding: 24px;
+  max-width: 350px;
+  letter-spacing: 0.5px;
+  margin: 0 auto 55px;
+  border: 1px solid rgba(178, 141, 121, 0.30);
+  background: rgba(40, 44, 74, 0.40);
+  backdrop-filter: blur(10px);
+}
+
+.intro-text.second-intro {
+  margin: 17px 0 0;
+  float: left;
+}
+
+.intro-text.third-intro {
+  margin: 0;
+  float: right;
+}
+
+.btn-more {
+  background: #EE7444;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 0;
+  font-family: "Roboto";
+  text-align: center;
+  min-width: 510px;
+  font-size: 23px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.btn-more:hover {
+  background: #3463AC;
+  color: #fff;
+}
