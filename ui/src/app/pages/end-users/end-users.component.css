@@ -1,0 +1,138 @@
+.end-users {
+  background: #fff;
+  padding: 95px 0 110px;
+}
+
+h2 {
+  color: #3463AC;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  margin: 0 0 35px;
+}
+
+h3 {
+  color: #EE7444;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 30px;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+}
+
+.end-users .subtitle {
+  color: #000;
+  font-size: 24px;
+  font-family: Roboto;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 1px;
+  margin-bottom: 55px;
+}
+
+.end-users .list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+  justify-content: space-between;
+}
+
+.end-users .list-wrapper .list-element {
+  width: 31%;
+  color: #000000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.5px;
+  margin-bottom: 35px;
+}
+
+.end-users .list-wrapper .list-element .list-number {
+  color: #EE7444;
+  font-family: Quicksand;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 33.6px */
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.end-users .special-info {
+  color: #3463AC;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.btn-more {
+  background: #EE7444;
+  color: #fff;
+  display: inline-block;
+  font-family: "Roboto";
+  text-align: center;
+  min-width: 510px;
+  font-size: 23px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  width: 100%;
+  padding: 13px 0;
+}
+
+.btn-more:hover {
+  background: #3463AC;
+  color: #fff;
+}
+
+.end-users .btn-more {
+  width: 100%;
+  text-align: center;
+  padding: 13px 0;
+}
+
+@media (max-width:768px) {
+
+  h2 {
+    font-size: 28px;
+    line-height: 37px;
+    margin: 15px 0 20px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin: 0 0 30px;
+  }
+
+  .end-users .subtitle {
+    font-size: 15px;
+    margin-bottom: 55px;
+  }
+
+  .end-users .list-wrapper .list-element {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .end-users .special-info {
+    color: #3463AC;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .btn-more {
+    display: block;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 19px;
+    width: auto !important;
+    min-width: auto;
+  }
+
+}

@@ -1,0 +1,109 @@
+.pilot-nodes {
+  background: url(/assets/end-users-bg.jpg) no-repeat 50% 50%;
+  padding: 95px 0 110px;
+  background-size: cover;
+}
+
+.pilot-nodes h2 {
+  color: #fff;
+  font-family: 'Quicksand';
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  margin: 0 0 35px;
+}
+
+h3 {
+  color: #EE7444;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 30px;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+}
+
+.pilot-nodes .subtitle {
+  color: #fff;
+  margin-bottom: 55px;
+}
+
+.pilot-nodes .btn-more {
+  width: 100%;
+  text-align: center;
+  padding: 13px 0;
+}
+
+.tile-box {
+  background: rgba(40, 44, 74, 0.60);
+  backdrop-filter: blur(60px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.tile-box .tile-title {
+  color: #6696B6;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 36.4px */
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.tile-box .tile-desc {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.5px;
+}
+
+.special-info {
+  color: #6696B6;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .pilot-nodes h2 {
+    font-size: 28px;
+    line-height: 37px;
+    margin: 15px 0 20px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin: 0 0 30px;
+  }
+
+  .tile-box {
+    padding: 14px;
+    margin-bottom: 20px;
+  }
+
+  .tile-box .tile-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .tile-box .tile-desc {
+    font-size: 14px;
+  }
+
+  .special-info {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+}
