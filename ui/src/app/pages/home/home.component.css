@@ -1,0 +1,25 @@
+header {
+  background: url("assets/img/header-bg.jpg") no-repeat 50% 0;
+  padding: 240px 0 120px;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 90px 0;
+}
+
+.btn-more {
+  background: #ee7444;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  min-width: 510px;
+  font-size: 23px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}

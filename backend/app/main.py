@@ -1,11 +1,10 @@
-from fastapi import FastAPI
-from app.routes import contact
+"""The FastAPI bootstrap"""
 
-app = FastAPI()
+import uvicorn
 
-# Include routes
-app.include_router(contact.router)
+from app.server import get_app
 
-@app.get("/")
-async def root():
-    return
+app = get_app()
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8000)
