@@ -1,0 +1,12 @@
+.eosc-common.top {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 25px 0;
+  background: #fff;
+  transition: all .25s ease;
+}
+
+.eosc-common.top .container {
+  display: flex;
+  justify-content: space-between;
+}
