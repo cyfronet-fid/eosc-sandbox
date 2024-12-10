@@ -1,6 +1,7 @@
-from fastapi import HTTPException, APIRouter
-from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 import os
+
+from fastapi import APIRouter, HTTPException
+from fastapi_mail import ConnectionConfig, FastMail, MessageSchema
 
 from app.api.models.contact import ContactForm
 from app.settings import settings
