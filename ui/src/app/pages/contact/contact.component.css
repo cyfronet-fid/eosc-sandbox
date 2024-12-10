@@ -1,0 +1,46 @@
+.contact {
+  background: #fff;
+  padding: 95px 0 0;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact .subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact form {
+  font-family: "Roboto";
+}
+
+.contact .form-group {
+  margin-bottom: 26px;
+}
+
+.contact form label {
+  color: #EE7444;
+  font-size: 18px;
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+
+.contact form input {
+  padding: 16px 24px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+.contact form textarea {
+  padding: 16px 24px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+.contact .btn-more {
+  border: none;
+  width: 100% !important;
+  min-width: auto;
+}
