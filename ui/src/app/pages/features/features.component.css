@@ -1,0 +1,47 @@
+.features {
+  padding: 95px 0;
+}
+
+.feature-row {
+  display: flex;
+  column-gap: 40px;
+  justify-content: space-between;
+}
+
+.feature-row .feature-box {
+  background: #282C4A;
+  backdrop-filter: blur(60px);
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  transition: all 0.5s ease;
+}
+
+.feature-row .feature-box:hover {
+  -webkit-box-shadow: 0px 8px 27px 0px rgba(66, 68, 90, 0.38);
+  -moz-box-shadow: 0px 8px 27px 0px rgba(66, 68, 90, 0.38);
+  box-shadow: 0px 8px 27px 0px rgba(66, 68, 90, 0.38);
+}
+
+.feature-row .feature-box .feature-title {
+  color: #6696B6;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.feature-row .feature-box .feature-description {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: Roboto;
+  line-height: 140%;
+  letter-spacing: 0.5px;
+}
