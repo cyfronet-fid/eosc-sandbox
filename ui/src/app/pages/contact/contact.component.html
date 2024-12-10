@@ -52,7 +52,7 @@
         <button
           type="submit"
           class="btn-more mt-4 mb-0"
-          [disabled]="contactForm.invalid"
+          [disabled]="contactForm.invalid || isResendingBlocked"
         >
           Send message
         </button>
