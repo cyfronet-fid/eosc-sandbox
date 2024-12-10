@@ -39,8 +39,24 @@
   border-radius: 0;
 }
 
+.contact form input:valid:not(:placeholder-shown),
+.contact form textarea:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.contact form input:invalid,
+.contact form textarea:invalid {
+  border-color: red;
+}
+
 .contact .btn-more {
   border: none;
   width: 100% !important;
   min-width: auto;
+}
+
+.contact .btn-more:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
 }
