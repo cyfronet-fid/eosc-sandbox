@@ -4,7 +4,8 @@ import os
 from typing import Literal
 
 from dotenv import load_dotenv
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
 
 EnvironmentType = Literal["dev", "test", "production"]
 load_dotenv(os.path.join(os.path.dirname(__file__), "../.env"))
@@ -13,7 +14,11 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "../.env"))
 class GlobalSettings(BaseSettings):
     """Common configuration parameters shared between all environments"""
 
-    ENVIRONMENT: EnvironmentType = "dev"
+    ENVIRONMENT: EnvironmentType = "production"
+
+    # Operational
+    BACKEND_BASE_URL: str = "http://localhost:8000/"
+    UI_BASE_URL: str = "http://localhost:4200/"
 
     EMAIL_SENDER: str = "noreply@example.com"
     EMAIL_RECEIVER: str = "admin@example.com"
@@ -21,6 +26,11 @@ class GlobalSettings(BaseSettings):
     EMAIL_SMTP_PORT: int = 587
     EMAIL_SMTP_USER: str = "username"
     EMAIL_SMTP_PASSWORD: str = "password"
+
+    # Get config from .env
+    model_config = SettingsConfigDict(
+        env_file="../../../../transform-service/.env", env_file_encoding="utf-8"
+    )
 
 
 class ProductionSettings(GlobalSettings):
