@@ -27,12 +27,7 @@
   font-weight: 400;
 }
 
-.contact form input {
-  padding: 16px 24px;
-  border: 1px solid #000;
-  border-radius: 0;
-}
-
+.contact form input,
 .contact form textarea {
   padding: 16px 24px;
   border: 1px solid #000;
@@ -44,9 +39,10 @@
   border-color: green;
 }
 
-.contact form input:invalid,
-.contact form textarea:invalid {
-  border-color: red;
+.contact form input.is-invalid,
+.contact form textarea.is-invalid {
+  border-color: red !important;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
 .contact .btn-more {
