@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from "@angular/common";
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [
-    FormsModule, ReactiveFormsModule
+    FormsModule, ReactiveFormsModule, CommonModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'

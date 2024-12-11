@@ -14,7 +14,7 @@
             formControlName="name"
             placeholder="e.g Emma Johnson"
           />
-          <div *ngIf="formControls.name.touched && formControls.name.invalid" class="text-danger">
+          <div *ngIf="formControls['name'].touched && formControls['name'].invalid" class="text-danger">
             Name is required.
           </div>
         </div>
@@ -28,9 +28,9 @@
             formControlName="email"
             placeholder="e.g emmajohnson@example.eu"
           />
-          <div *ngIf="formControls.email.touched && formControls.email.invalid" class="text-danger">
-            <div *ngIf="formControls.email.errors?.required">Email is required.</div>
-            <div *ngIf="formControls.email.errors?.email">Enter a valid email address.</div>
+          <div *ngIf="formControls['email'].touched && formControls['email'].invalid" class="text-danger">
+            <div *ngIf="formControls['email'].errors?.['required']">Email is required.</div>
+            <div *ngIf="formControls['email'].errors?.['email']">Enter a valid email address.</div>
           </div>
         </div>
 
@@ -43,12 +43,10 @@
             rows="3"
             placeholder="e.g. setting up a new EOSC node for the structural biology community, publishing data in EOSC, offering cloud resources to EOSC, etc."
           ></textarea>
-          <div *ngIf="formControls.message.touched && formControls.message.invalid" class="text-danger">
+          <div *ngIf="formControls['message'].touched && formControls['message'].invalid" class="text-danger">
             Message is required.
           </div>
         </div>
-
-        <!-- Button is disabled unless form is valid -->
         <button
           type="submit"
           class="btn-more mt-4 mb-0"
