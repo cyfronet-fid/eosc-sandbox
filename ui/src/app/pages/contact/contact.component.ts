@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from "@angular/common";
-import { ContactService } from "./contact.service";
 
 
 @Component({
@@ -19,7 +18,7 @@ export class ContactComponent implements OnInit {
   lastSubmittedData: any = null;
   isResendingBlocked: boolean = false;
 
-  constructor(private fb: FormBuilder, private contactService: ContactService) {}
+  constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
     this.contactForm = this.fb.group({
@@ -37,25 +36,34 @@ export class ContactComponent implements OnInit {
     return this.contactForm.controls;
   }
 
+  // onSubmit() {
+  //   if (this.contactForm.valid) {
+  //     const currentData = this.contactForm.value;
+  //     this.isResendingBlocked = true;
+  //
+  //     this.contactService.sendMessage(currentData).subscribe({
+  //       next: (response) => {
+  //         console.log(response.detail);
+  //         alert('Thanks for contacting us! Message has been submitted.');
+  //         this.lastSubmittedData = currentData;
+  //         this.contactForm.reset();
+  //         this.isResendingBlocked = true; // Block resending same message.
+  //       },
+  //       error: (error) => {
+  //         console.error('Error sending message:', error);
+  //         alert('Failed to send the message. Please try again later.');
+  //         this.isResendingBlocked = false; // Allow retrying if submission failed.
+  //       },
+  //     });
+  //   }
+  // }
+
   onSubmit() {
     if (this.contactForm.valid) {
       const currentData = this.contactForm.value;
+      this.lastSubmittedData = currentData;
       this.isResendingBlocked = true;
-
-      this.contactService.sendMessage(currentData).subscribe({
-        next: (response) => {
-          console.log(response.detail);
-          alert('Thanks for contacting us! Message has been submitted.');
-          this.lastSubmittedData = currentData;
-          this.contactForm.reset();
-          this.isResendingBlocked = true; // Block resending same message.
-        },
-        error: (error) => {
-          console.error('Error sending message:', error);
-          alert('Failed to send the message. Please try again later.');
-          this.isResendingBlocked = false; // Allow retrying if submission failed.
-        },
-      });
+      alert('Thanks for contacting us! Message has been submitted.');
     }
   }
 
