@@ -5,6 +5,12 @@
 
 .contact h2 {
   text-align: center;
+  color: #3463AC;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  margin: 0 0 35px;
 }
 
 .contact .subtitle {
@@ -55,4 +61,12 @@
   background: #ccc;
   color: #666;
   cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 28px;
+    line-height: 37px;
+    margin: 15px 0 20px;
+  }
 }

@@ -6,6 +6,23 @@
 
 .pilot-nodes h2 {
   color: #fff;
+  font-family: 'Quicksand';
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  margin: 0 0 35px;
+}
+
+h3 {
+  color: #EE7444;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 30px;
+  line-height: 130%;
+  letter-spacing: 0.5px;
 }
 
 .pilot-nodes .subtitle {
@@ -56,4 +73,37 @@
   line-height: 130%;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .pilot-nodes h2 {
+    font-size: 28px;
+    line-height: 37px;
+    margin: 15px 0 20px;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin: 0 0 30px;
+  }
+
+  .tile-box {
+    padding: 14px;
+    margin-bottom: 20px;
+  }
+
+  .tile-box .tile-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .tile-box .tile-desc {
+    font-size: 14px;
+  }
+
+  .special-info {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
 }
