@@ -1,0 +1,157 @@
+header {
+  background: url("/assets/header-bg.jpg") no-repeat 50% 0;
+  background-repeat: no-repeat;
+  padding: 240px 0 120px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Quicksand';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 122.222% */
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin: 0 0 90px 0;
+}
+
+.intro-text {
+  font-size: 18px;
+  font-style: normal;
+  font-family: 'Quicksand';
+  font-weight: 400;
+  color: #fff;
+  line-height: 120%;
+  padding: 24px;
+  max-width: 350px;
+  letter-spacing: 0.5px;
+  margin: 0 auto 55px;
+  border: 1px solid rgba(178, 141, 121, 0.30);
+  background: rgba(40, 44, 74, 0.40);
+  backdrop-filter: blur(10px);
+}
+
+.intro-text.second-intro {
+  margin: 17px 0 0;
+  float: left;
+}
+
+.intro-text.third-intro {
+  margin: 0;
+  float: right;
+}
+
+.btn-more {
+  background: #EE7444;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 0;
+  font-family: "Roboto";
+  text-align: center;
+  min-width: 510px;
+  font-size: 23px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.btn-more:hover {
+  background: #3463AC;
+  color: #fff;
+}
+
+@media (max-width: 1550px) {
+
+  .container {
+    max-width: 1450px;
+  }
+
+  h1 {
+    font-size: 41px;
+  }
+
+  .intro-text {
+    font-size: 15px;
+    padding: 20px;
+    max-width: 350px;
+    letter-spacing: 0.5px;
+    margin: 0 auto 25px;
+  }
+
+  .intro-text.second-intro {
+    margin: 0 auto 25px;
+    float: left;
+  }
+
+}
+
+@media (max-width:1400px) {
+
+  header {
+    padding: 140px 0 25px;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+}
+
+@media (max-width:1200px) {
+
+  header {
+    padding: 100px 0 25px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    line-height: 25px; /* 125% */
+  }
+}
+
+@media (max-width:992px) {
+
+  .intro-text {
+    font-size: 16px;
+    line-height: 23px; /* 125% */
+  }
+}
+
+@media (max-width:768px) {
+
+  h1 {
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  header {
+    background-size: cover;
+    padding: 150px 0 25px;
+  }
+
+  header h1 {
+    margin-bottom: 35px;
+  }
+
+  .intro-text {
+    text-align: center;
+    font-size: 13px;
+    line-height: 21px;
+    max-width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .btn-more {
+    display: block;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 19px;
+    width: auto !important;
+    min-width: auto;
+  }
+}
