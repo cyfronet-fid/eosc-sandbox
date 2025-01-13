@@ -3,9 +3,9 @@ version: '3.9'
 services:
   api:
     build: ./backend
-    command: uvicorn app.main:app --workers 1 --host 0.0.0.0 --port 8000
+    command: uvicorn app.main:app --workers 1 --host 0.0.0.0 --port 8088
     ports:
-      - "8000:8000"
+      - "8088:8088"
     environment:
       BACKEND_BASE_URL: "${BACKEND_BASE_URL}"
       UI_BASE_URL: "${UI_BASE_URL}"
