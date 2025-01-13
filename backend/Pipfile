@@ -8,6 +8,8 @@ fastapi = "*"
 uvicorn = "*"
 python-dotenv = "*"
 fastapi-mail = "*"
+pydantic = "*"
+pydantic-settings = "*"
 
 [dev-packages]
 black = "*"
