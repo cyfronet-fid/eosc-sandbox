@@ -10,7 +10,7 @@ a {
 
 h1 {
   font-family: 'Quicksand';
-  font-size: 60px;
+  font-size: 58px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 122.222% */
@@ -52,9 +52,9 @@ h1 {
   padding: 8px 0;
   font-family: "Roboto";
   text-align: center;
-  min-width: 510px;
   font-size: 23px;
   margin-bottom: 25px;
+  min-width: 510px;
   font-weight: 500;
 }
 
