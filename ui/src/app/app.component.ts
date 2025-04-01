@@ -5,7 +5,6 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { FeaturesComponent } from "./pages/features/features.component";
 import { PilotNodesComponent } from "./pages/pilot-nodes/pilot-nodes.component";
 import { EndUsersComponent } from "./pages/end-users/end-users.component";
-import { ServicesComponent } from "./pages/services/services.component";
 import { ContactComponent } from "./pages/contact/contact.component";
 
 @Component({
@@ -18,7 +17,6 @@ import { ContactComponent } from "./pages/contact/contact.component";
     FeaturesComponent,
     PilotNodesComponent,
     EndUsersComponent,
-    ServicesComponent,
     ContactComponent,
   ],
   templateUrl: './app.component.html',

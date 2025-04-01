@@ -44,7 +44,7 @@ h3 {
   color: #000;
   max-width: 1000px;
   font-family: 'Roboto';
-  font-size: 24px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 33.6px */
@@ -348,5 +348,11 @@ a {
 @media (min-width:1920px) {
   header {
     background-size: cover;
+  }
+}
+
+@media (min-width: 1560px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1535px !important;
   }
 }
