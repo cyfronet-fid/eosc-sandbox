@@ -29,7 +29,7 @@ h1 {
   color: #fff;
   line-height: 120%;
   padding: 24px;
-  max-width: 350px;
+  max-width: 335px;
   letter-spacing: 0.5px;
   margin: 0 auto 55px;
   border: 1px solid rgba(178, 141, 121, 0.30);
@@ -78,7 +78,7 @@ h1 {
   .intro-text {
     font-size: 15px;
     padding: 20px;
-    max-width: 350px;
+    max-width: 335px;
     letter-spacing: 0.5px;
     margin: 0 auto 25px;
   }
