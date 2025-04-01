@@ -1,7 +1,9 @@
+
+
 header {
   background: url("/assets/header-bg.jpg") no-repeat 50% 0;
   background-repeat: no-repeat;
-  padding: 240px 0 120px;
+  padding: 175px 0 120px;
 }
 
 a {
@@ -155,3 +157,4 @@ h1 {
     min-width: auto;
   }
 }
+
