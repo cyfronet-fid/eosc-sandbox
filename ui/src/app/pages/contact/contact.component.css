@@ -1,12 +1,13 @@
 .contact {
-  background: #fff;
-  padding: 95px 0 0;
+  background: url(/assets/end-users-bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  padding: 95px 0 75px;
 }
 
 .contact h2 {
   text-align: center;
-  color: #3463AC;
-  font-size: 52px;
+  color: #fff;
+  font-size: 54px;
   font-weight: 700;
   line-height: 125%;
   letter-spacing: 0.5px;
@@ -15,6 +16,7 @@
 
 .contact .subtitle {
   text-align: center;
+  color: #fff;
   margin-bottom: 50px;
 }
 
@@ -36,13 +38,21 @@
 .contact form input,
 .contact form textarea {
   padding: 16px 24px;
-  border: 1px solid #000;
+  border: 1px solid #D0D5DD;
+  background: none;
+  color: #D0D5DD;
   border-radius: 0;
 }
 
 .contact form input:valid:not(:placeholder-shown),
 .contact form textarea:valid:not(:placeholder-shown) {
-  border-color: green;
+  border-color: #fff;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  color: #D0D5DD;
+  opacity: 0.6;
 }
 
 .contact form input.is-invalid,
