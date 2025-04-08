@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import "jquery";
 
 declare var $: JQueryStatic;
@@ -12,42 +12,40 @@ declare var jQuery: JQueryStatic;
     <div class="container">
       <div class="col-lg-4 col-12 mx-auto">
           <h2>Contact us</h2>
-          <div class="subtitle">Please, contact us shortly describing<br>your case</div>
           <a id="zammad-feedback-form">Submit feedback</a>
       </div>
     </div>
   </div>
   `
 })
-export class FeedbackPanelComponent implements AfterViewInit {
+export class FeedbackPanelComponent implements OnInit {
   url: string = 'https://helpdesk.sandbox.eosc-beyond.eu/assets/form/form.js'
 
 
-  ngAfterViewInit() {
+  ngOnInit() {
     this._loadScript(this.url);
     setTimeout(()=> {this._makeFeedbackForm()}, 10)
   }
 
   private _loadScript(url: string) {
-    const body = <HTMLDivElement> document.body;
+    const header = <HTMLHeadElement> document.head;
     const script = document.createElement('script');
     script.innerHTML = '';
     script.src = url;
     script.async = false;
     script.defer = true;
     script.id = 'zammad_form_script';
-    body.insertBefore(script, body.firstChild);
+    header.appendChild(script);
   }
 
 
 
   private _makeFeedbackForm() {
-
     $('#zammad-feedback-form').ZammadForm({
       agreementMessage: '  Accept EOSC Helpdesk <a target="_blank" href="https://eosc-helpdesk.scc.kit.edu/privacy-policy">Data Privacy Policy</a> & <a target="_blank" href="https://eosc-helpdesk.scc.kit.edu/aup">Acceptable Use Policy</a>',
       messageTitle: 'Report a problem/feedback',
       messageSubmit: 'Send message',
-      messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
+      messageThankYou: 'We have received your message and will get back to you as soon as possible with the information you requested.',
       modal: false,
       targetGroupID: 3,
       attributes: [

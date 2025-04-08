@@ -269,6 +269,9 @@ a {
 .contact form textarea:valid:not(:placeholder-shown) {
   border-color: #fff !important;
 }
+.zammad-form-thankyou{
+  color: #D0D5DD !important;
+}
 
 .zammad-form-control::placeholder,
 .contact form textarea::placeholder {
