@@ -9,13 +9,19 @@ declare var jQuery: JQueryStatic;
   standalone: true,
   template: `
   <div  class="contact" id="contact">
-  <a id="zammad-feedback-form">Submit feedback</a>
+    <div class="container">
+      <div class="col-lg-4 col-12 mx-auto">
+          <h2>Contact us</h2>
+          <div class="subtitle">Please, contact us shortly describing<br>your case</div>
+          <a id="zammad-feedback-form">Submit feedback</a>
+      </div>
+    </div>
   </div>
   `
 })
 export class FeedbackPanelComponent implements AfterViewInit {
   url: string = 'https://helpdesk.sandbox.eosc-beyond.eu/assets/form/form.js'
-  
+
 
   ngAfterViewInit() {
     this._loadScript(this.url);
@@ -36,7 +42,7 @@ export class FeedbackPanelComponent implements AfterViewInit {
 
 
   private _makeFeedbackForm() {
-    
+
     $('#zammad-feedback-form').ZammadForm({
       agreementMessage: '  Accept EOSC Helpdesk <a target="_blank" href="https://eosc-helpdesk.scc.kit.edu/privacy-policy">Data Privacy Policy</a> & <a target="_blank" href="https://eosc-helpdesk.scc.kit.edu/aup">Acceptable Use Policy</a>',
       messageTitle: 'Report a problem/feedback',
@@ -88,5 +94,5 @@ export class FeedbackPanelComponent implements AfterViewInit {
         });
   }
 
- 
+
 }
