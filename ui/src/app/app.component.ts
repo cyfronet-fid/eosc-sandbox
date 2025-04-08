@@ -6,6 +6,8 @@ import { FeaturesComponent } from "./pages/features/features.component";
 import { PilotNodesComponent } from "./pages/pilot-nodes/pilot-nodes.component";
 import { EndUsersComponent } from "./pages/end-users/end-users.component";
 import { ContactComponent } from "./pages/contact/contact.component";
+import { FeedbackPanelComponent } from './pages/contact/feedback-pannel.component';
+
 
 @Component({
   selector: 'app-root',
@@ -18,6 +20,7 @@ import { ContactComponent } from "./pages/contact/contact.component";
     PilotNodesComponent,
     EndUsersComponent,
     ContactComponent,
+    FeedbackPanelComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
