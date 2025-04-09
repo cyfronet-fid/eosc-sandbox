@@ -6,7 +6,6 @@ declare var jQuery: JQueryStatic;
 
 @Component({
   selector: 'app-feedback-panel',
-  standalone: true,
   template: `
   <div  class="contact" id="contact">
     <div class="container">
