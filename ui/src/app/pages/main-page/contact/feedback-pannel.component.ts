@@ -19,6 +19,7 @@ declare var jQuery: JQueryStatic;
 })
 export class FeedbackPanelComponent implements OnInit {
 
+
   ngOnInit() {
     setTimeout(()=> {this._makeFeedbackForm()}, 10)
   }

@@ -21,13 +21,14 @@
       height: auto;
       opacity: 0.15;
     }
-        
 
     .custom-navbar {
       padding-top: 25px;
       padding-bottom: 25px;
-      position: fixed; 
-      top: 0; 
+
+      position: fixed;
+      top: 0;
+
       left: 0;
       width: 100%;
       z-index: 1000
@@ -37,7 +38,7 @@
       width: 80%;
       margin: 0 auto;
     }
-    
+
     h1, h2, h3, h4 {
       font-family: 'Quicksand', sans-serif;
       color: var(--color-heading);
@@ -45,15 +46,14 @@
 
     h1 {
       margin-bottom: 2.5rem;
-      color: var(--color-accent);
+
+      color: #ee7444;
     }
 
     h2 {
-      font-size: 1,5rem;
+      font-size: 1.7rem;
+      margin-bottom: 10px;
     }
-
-
-
 
     nav {
       background-color: var(--color-heading);
@@ -61,8 +61,8 @@
 
 
     main {
-      padding: 2rem 1rem;
-      padding-top: 10rem;
+
+      padding: 4rem 2rem 1rem;
     }
 
     section {
