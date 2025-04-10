@@ -6,12 +6,11 @@ import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
-  standalone: true,
-  imports: [
-    FormsModule,
-    ReactiveFormsModule,
-    CommonModule
-  ],
+  // imports: [
+  //   FormsModule,
+  //   ReactiveFormsModule,
+  //   CommonModule
+  // ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
