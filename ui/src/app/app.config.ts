@@ -9,6 +9,7 @@ export function loadJQuery(scriptLoader: ScriptLoaderService) {
   return () => scriptLoader.loadScript(zammadUrl);
 }
 
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
@@ -19,5 +20,6 @@ export const appConfig: ApplicationConfig = {
       deps: [ScriptLoaderService],
       multi: true
     }
+
   ]
 };
