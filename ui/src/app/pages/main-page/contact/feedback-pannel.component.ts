@@ -18,25 +18,10 @@ declare var jQuery: JQueryStatic;
   `
 })
 export class FeedbackPanelComponent implements OnInit {
-  url: string = 'https://helpdesk.sandbox.eosc-beyond.eu/assets/form/form.js'
-
 
   ngOnInit() {
-    this._loadScript(this.url);
     setTimeout(()=> {this._makeFeedbackForm()}, 10)
   }
-
-  private _loadScript(url: string) {
-    const header = <HTMLHeadElement> document.head;
-    const script = document.createElement('script');
-    script.innerHTML = '';
-    script.src = url;
-    script.async = false;
-    script.defer = true;
-    script.id = 'zammad_form_script';
-    header.appendChild(script);
-  }
-
 
 
   private _makeFeedbackForm() {
