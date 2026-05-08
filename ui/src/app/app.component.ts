@@ -18,7 +18,19 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.css'],
 })
 
-export class AppComponent  {
+export class AppComponent  implements  OnInit {
   title = 'EOSC Sandbox';
-  
+
+  ngOnInit() {
+    window.addEventListener("load", () => {
+      if (window.location.hash) {
+        const el = document.querySelector(window.location.hash);
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: "smooth" });
+          }, 300);
+        }
+      }
+    });
+  }
 }
